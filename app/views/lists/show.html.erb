@@ -1,0 +1,14 @@
+
+<div class="container">
+  <br>
+    <h2><%= @list.name %></h2>
+  <br>
+<%=link_to "Back to list index", lists_path,class:"btn btn-primary" %>
+  <br>
+    <h2><%= @list.name %></h2>
+</div>
+  </div>
+    <%= link_to "delete", bookmark_path(bookmark)%>
+    <%= method: :delete, data: { confirm: "Continu to delete #{movie.title} from your #{@list.name} list"} %>
+    <% end %>
+  </div>
